@@ -166,3 +166,7 @@ footer {
     margin: 1rem;
   }
 }
+
+section {
+  scroll-margin-top: 100px; /* make sure this matches sticky header height */
+}
