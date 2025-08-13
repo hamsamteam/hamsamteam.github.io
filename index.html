@@ -3,88 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to HamSam</title>
-  <meta name="description" content="HamSam – About us, our projects, and our future roadmap.">
+  <title>Welcome to [Company Name]</title>
+  <meta name="description" content="[Company Name] – About us, our projects, and our future roadmap.">
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Basic embedded CSS – you can move this to style.css */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #004080;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      background: white;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #004080;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
 </head>
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll("section");
-
-    const observerOptions = {
-      root: null,
-      threshold: 0.1,
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
-</script>
-
 <body>
 
   <header>
-    <h1>HamSam</h1>
+    <h1>[Company Name]</h1>
     <p>Your tagline or mission statement here</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#project">Projects</a>
-      <a href="#project">Current Projects</a>
+      <a href="#project">Current Project</a>
       <a href="#future">Future Pipeline</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -92,20 +22,9 @@
 
   <section id="about">
     <h2>About Us</h2>
-    <p>HamSam is a [brief description of your company, mission, and core values]. Our goal is to [state main purpose or vision].</p>
+    <p>[Company Name] is a [brief description of your company, mission, and core values]. Our goal is to [state main purpose or vision].</p>
   </section>
-  
-  <section id="project">
-    <h2>Project</h2>
-    <p>Our completed project is <strong>[Project Name]</strong>, which aims to [project objective/goal].  
-       Key features include:</p>
-    <ul>
-      <li>Feature 1 – short description</li>
-      <li>Feature 2 – short description</li>
-      <li>Feature 3 – short description</li>
-    </ul>
-  </section>
-  
+
   <section id="project">
     <h2>Current Project</h2>
     <p>Our latest project is <strong>[Project Name]</strong>, which aims to [project objective/goal].  
@@ -135,8 +54,32 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 HamSam. All rights reserved.</p>
+    <p>&copy; 2025 [Company Name]. All rights reserved.</p>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section");
+
+      const observerOptions = {
+        root: null,
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
 
 </body>
 </html>
