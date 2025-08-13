@@ -779,15 +779,15 @@
         }
 
         .portfolio-item:nth-child(4) .portfolio-image {
-            background-image: url('images/dashboard-interfaces-transparent-displays.jpg');
+            background-image: url('images/computer-desk-stickers.jpg');
         }
 
         .portfolio-item:nth-child(5) .portfolio-image {
-            background-image: url('images/marketing-strategy-women.jpg');
+            background-image: url('images/computer-desk-stickers.jpg');
         }
 
         .portfolio-item:nth-child(6) .portfolio-image {
-            background-image: url('images/portfolio-website-girl.jpg');
+            background-image: url('images/computer-desk-stickers.jpg');
         }
 
         .portfolio-image::before {
