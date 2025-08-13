@@ -187,6 +187,11 @@
             -webkit-text-fill-color: transparent;
             letter-spacing: -0.5px;
         }
+       .subtitle {
+         font-size: 0.8em;  /* 80% of normal text size */
+         color: #555;       /* Optional: subtle color */
+         margin: 0;         /* Remove extra space if needed */
+       }
 
         .nav-links {
             display: flex;
